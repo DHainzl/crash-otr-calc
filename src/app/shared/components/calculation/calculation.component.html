@@ -1,0 +1,12 @@
+<mat-card>
+    <mat-card-header>
+        <mat-card-title>Needed Ingredients</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+        <div *ngFor="let category of categorizedItems" class="category">
+            <span *ngFor="let item of category.items" class="item">
+                <app-item [item]="item">{{ calculationResult[item.id] || 0 }} </app-item>
+            </span>
+        </div>
+    </mat-card-content>
+</mat-card>

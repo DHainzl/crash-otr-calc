@@ -1,0 +1,16 @@
+<mat-card>
+    <mat-card-header>
+        <mat-card-title>Inventory</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+        <app-categorized-inputs
+            [categorizedItems]="categorizedItems"
+            [stock]="inventory"
+            (stockChange)="updateInventory($event.itemId, $event.newStock)"
+        ></app-categorized-inputs>
+    </mat-card-content>
+    <mat-card-actions>
+        <button mat-button (click)="clearInventory()">CLEAR</button>
+    </mat-card-actions>
+</mat-card>
+

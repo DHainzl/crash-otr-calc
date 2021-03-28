@@ -1,0 +1,12 @@
+.category {
+    display: flex;
+    justify-content: center;
+}
+
+.item {
+    min-width: 115px;
+
+    &:not(:last-of-type) {
+        margin-right: 30px;
+    }
+}

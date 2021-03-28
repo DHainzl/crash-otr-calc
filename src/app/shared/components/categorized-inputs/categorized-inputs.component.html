@@ -1,0 +1,21 @@
+<mat-accordion>
+    <mat-expansion-panel *ngFor="let category of categorizedItems">
+        <mat-expansion-panel-header>
+            <mat-panel-title>{{ category.title }}</mat-panel-title>
+            <mat-panel-description>
+                <div *ngFor="let item of category.items" class="summary">
+                    <app-item [item]="item" size="small">{{ stock[item.id] }}</app-item>
+                </div>
+            </mat-panel-description>
+        </mat-expansion-panel-header>
+
+        <div *ngFor="let item of category.items" class="item-input">
+            <app-item [item]="item">
+                <mat-form-field appearance="standard">
+                    <mat-label>{{ item.name }}</mat-label>
+                    <input matInput type="number" min="0" [ngModel]="stock[item.id]" (ngModelChange)="updateStock(item.id, $event)" />
+                </mat-form-field>
+            </app-item>
+        </div>
+    </mat-expansion-panel>
+</mat-accordion>

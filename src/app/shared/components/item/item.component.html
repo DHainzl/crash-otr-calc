@@ -1,0 +1,8 @@
+<span *ngIf="item" class="item" [class.size-small]="size === 'small'">
+    <div class="item-icon">
+        <img src="/assets/game-icons/{{ item.iconPath }}" [alt]="item.name" [matTooltip]="item.name" />
+    </div>
+    <span class="item-content">
+        <ng-content></ng-content>
+    </span>
+</span>
