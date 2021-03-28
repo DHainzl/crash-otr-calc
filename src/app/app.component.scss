@@ -1,0 +1,9 @@
+@import "../theme-vars.scss";
+
+footer {
+    background-color: mat-color($primary, 500);
+    text-align: center;
+    font-size: 12px;
+    line-height: 1.2em;
+    padding: 15px 30px;
+}

@@ -1,0 +1,14 @@
+// Import library functions for theme creation.
+@import '~@angular/material/theming';
+
+// Define your application's custom theme.
+$primary: mat-palette($mat-purple);
+$accent:  mat-palette($mat-green, A200, A100, A400);
+
+$theme: mat-dark-theme($primary, $accent);
+
+// (status-bar: black, app-bar: #212121, background: #303030, hover: rgba(255, 255, 255, 0.04), card: #424242, dialog: #424242, disabled-button: rgba(255, 255, 255, 0.12), raised-button: #424242, focused-button: rgba(255, 255, 255, 0.12), selected-button: #212121, selected-disabled-button: #424242, disabled-button-toggle: black, unselected-chip: #616161, disabled-list-option: black, tooltip: #616161) 
+$background: map-get($theme, 'background');
+
+// (base: white, divider: rgba(255, 255, 255, 0.12), dividers: rgba(255, 255, 255, 0.12), disabled: rgba(255, 255, 255, 0.5), disabled-button: rgba(255, 255, 255, 0.3), disabled-text: rgba(255, 255, 255, 0.5), elevation: black, hint-text: rgba(255, 255, 255, 0.5), secondary-text: rgba(255, 255, 255, 0.7), icon: white, icons: white, text: white, slider-min: white, slider-off: rgba(255, 255, 255, 0.3), slider-off-active: rgba(255, 255, 255, 0.3))
+$foreground: map-get($theme, 'foreground');
