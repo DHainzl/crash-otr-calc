@@ -183,19 +183,17 @@ const infernoItems: Item[] = [
         materials: {},
     },
     {
-        id: 'glow-mato',
-        name: 'Glowmato',
+        id: 'magma-chunk',
+        name: 'Magma Chunk',
         type: 'ingredient',
-        iconPath: 'materials/Glowmato.png',
-        hidden: true,
+        iconPath: 'materials/MagmaChunk.png',
         materials: {},
     },
     {
-        id: 'blaze-pods',
-        name: 'Blaze Pods',
+        id: 'red-eyes',
+        name: 'Red Eyes',
         type: 'ingredient',
-        iconPath: 'materials/BlazePods.png',
-        hidden: true,
+        iconPath: 'materials/RedEyes.png',
         materials: {},
     },
     {
@@ -203,7 +201,6 @@ const infernoItems: Item[] = [
          name: 'Hot Hot Shroom',
          type: 'ingredient',
          iconPath: 'materials/HotHotShroom.png',
-         hidden: true,
          materials: {},
     },
     // Eggs
@@ -222,8 +219,10 @@ const infernoItems: Item[] = [
         name: 'Inferno Serum',
         type: 'weapon',
         iconPath: 'weapons/serum_inferno.png',
-        hidden: true,
         materials: {
+            'wumpa-fruit': 180,
+            'inferno-orb': 5,
+            'magma-chunk': 9,
         },
     },
     {
@@ -231,8 +230,10 @@ const infernoItems: Item[] = [
         name: 'Inferno Bomb',
         type: 'weapon',
         iconPath: 'weapons/bomb_inferno.png',
-        hidden: true,
         materials: {
+            'wumpa-fruit': 350,
+            'magma-chunk': 6,
+            'cinder-egg': 2,
         },
     },
     {
@@ -240,8 +241,10 @@ const infernoItems: Item[] = [
         name: 'Inferno Raygun',
         type: 'weapon',
         iconPath: 'weapons/raygun_inferno.png',
-        hidden: true,
         materials: {
+            'wumpa-fruit': 500,
+            'cinder-egg': 3,
+            'red-eyes': 15,
         },
     },
     {
@@ -249,8 +252,10 @@ const infernoItems: Item[] = [
         name: 'Inferno Bazooka',
         type: 'weapon',
         iconPath: 'weapons/bazooka_inferno.png',
-        hidden: true,
         materials: {
+            'cinder-egg': 6,
+            'red-eyes': 15,
+            'hot-hot-shroom': 15,
         },
     },
 ];
